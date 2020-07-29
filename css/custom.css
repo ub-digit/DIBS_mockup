@@ -31,8 +31,27 @@ body {
   color: #333333;
 }
 
+a {
+  color: #025DA6;
+  text-decoration: underline;
+}
+
+.btn.btn-primary {
+  background-color: #025DA6;
+}
+.center {
+  text-align: center;
+}
 hr {
   color: #ccc;
+}
+
+hr.page-divider { /* TO VISUALIZE DIFFERENT PAGES */ 
+  color: darkcyan;
+  height: 10px;
+  background-color:darkcyan;
+  border: none;  
+
 }
 
 /* HEADER */ 
@@ -64,6 +83,7 @@ hr.header-hr {
   line-height: 1;
 }
 .headers .level-1 a {
+  text-decoration: none;
   color: #000;
   font-family: NimbusSanNovCon-Bol,'Nimbus Sans Novus Cond Bold',Arial;
   font-size: 19px;
@@ -97,8 +117,21 @@ hr.header-hr {
 .main p.intro {
   margin-bottom: 50px;
 }
-.payments-table {
-
+.error-icon {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.error-icon .fas {
+  color: #D9534F;
+  font-size: 100px;
+}
+.success-icon {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.success-icon .fas {
+  color: #5cb85c;
+  font-size: 100px;
 }
 .payments-table .payments-table-header {
   font-size: 24px;
@@ -118,10 +151,13 @@ hr.header-hr {
   text-align: right;
 }
 
-#dibs-complete-checkout {
-  border: 1px dotted #ccc;
-  margin-bottom: 70px;
+.payment-made-info {
+  margin-top: 20px;
 }
+
+ #dibs-complete-checkout .col-12 {
+  border: 1px dotted #ccc;
+ }
 
 @media (max-width: 575.98px) { 
   /* REMOVE PADDING ON MOBILE FOR DIBS FORM */ 
@@ -138,6 +174,7 @@ footer {
  background-color: #1f1f1f;
  color: #f2f2f2;
  padding: 40px 0 40px 0;
+ margin-top: 70px;
 }
 .footer-header {
   font-weight: bold;

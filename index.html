@@ -9,13 +9,14 @@
 
   <!-- Place favicon.ico in the root directory -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <link href="fontawesome/css/all.css" rel="stylesheet"> <!--load all styles -->
   <link type="text/css" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700" media="all">
   <link rel="stylesheet" href="css/custom.css">
 </head>
 
 <body>
 
-  <div class="debug">
+  <div class="debug"> <!-- REMOVE WHEN NOT NEEDED -->
     <strong>Breakpoint: </strong>
     <div class="xs">xs-small ( < 576px)</div>
     <div class="small">small (>= 576px)</div>
@@ -27,20 +28,119 @@
   <div class="container">
     <header class="row">  
       <div class="col-12">
-        <div class="logo"></div>
+        <div class="logo"></div>  <!-- APPLY class="en" ON BODY FOR ENGLISH LOGO -->
         <div class="headers">
           <div class="level-1"><a href="http://www.ub.gu.se">Göteborgs universitetsbibliotek</a></div>
           <div class="level-2">Betala dina avgifter</div>
         </div>
       </div>
     </header>
-  </div> <!-- end container -->
+  </div> 
 
   <hr class="header-hr">
 
   <div class="container main">
     <div class="row">
       <div class="col-md-10 offset-md-1 col-lg-8 offset-lg-2">      
+
+        <!-- ERROR PAGE -->
+        <div class="row">
+          <div class="col-12 col-sm-3 order-sm-last">
+            <div class="error-icon">
+              <i class="fas fa-times-circle"></i>
+            </div>
+          </div>
+          <div class="col-12 col-sm-9 col-sm">
+            <h1>
+              Något gick fel
+            </h1>
+            <p>
+              Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from.      
+            </p>
+            <p>
+              <a href="#">Tillbaka</a>
+            </p>
+          </div>
+        </div>
+        <!-- ERROR PAGE END-->
+
+        <hr class="page-divider">
+
+        <!-- PAYMENT SUCCESS -->
+        <div class="row">
+          <div class="col-12 col-sm-9 align-self-center">
+            <h1>Din betalning är klar</h1>
+          </div>
+          <div class="col-12 col-sm-3 align-self-center">
+            <div class="success-icon">
+              <i class="fas fa-check-circle"></i>
+            </div>
+          </div>
+        </div>
+        <div class="payments-table">
+          <div class="payments-table-header">
+            <h2>
+              Betalat
+            </h2>
+          </div>
+          <div class="payments-table-content">
+            <!-- loop (2 dummy-rows for clarity) -->
+            <div class="row payments-table-content-row"> 
+              <div class="col-8">
+                <div class="payments-table-content-row-label">Förseningsavgift</div>
+              </div>
+              <div class="col-4">
+                <span class="float-right">255 kr</span>
+              </div> 
+              <div class="col-12 payments-table-content-row-item">Forskningsmetodikens grunder</div>
+              <div class=col-12>
+                  <hr>
+              </div>
+            </div>
+
+            <div class="row payments-table-content-row"> 
+              <div class="col-8">
+                <div class="payments-table-content-row-label">Ersättningsavgift</div>
+              </div>
+              <div class="col-4">
+                <span class="float-right">255 kr</span>
+              </div> 
+              <div class="col-12 payments-table-content-row-item">Grönsaker: tillbehör och granityr / </div>
+              <div class=col-12>
+                <hr>
+            </div>
+            </div>
+            <!-- end loop -->
+
+            <div class="row payments-table-content-row">
+              <div class="col-12">
+                <div class="payments-table-content-row-sum float-right">
+                  <div class="payments-table-content-row-sum-amount">
+                    Summa: 510 kr
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="row payment-made-info">
+              <div class="col-md-10 offset-md-1">
+                <p>
+                  Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from.
+                </p>
+              </div>
+              <div class="col-12 center">
+                <button class="btn btn-primary">Tillbaka till mina lån</button>
+              </div>
+            </div>
+          </div>
+        </div>   
+
+        <!-- END PAYMENT SUCCESS -->
+
+
+        <hr class="page-divider">
+
+        <!-- PAYMENT START PAGE -->  
         <h1>Betala dina avgifter</h1>
         <p class="intro">
           Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from.      
@@ -94,14 +194,27 @@
               </div>
             </div>
           </div>
-        </div>
+        </div>   
       </div>
     </div>
   </div>
   
   <div class="container no-margin-on-xs" id="dibs-complete-checkout">
-    DIBS-FORM RENDERS IN THIS CONTAINER
+    <div class="row">
+      <div class="col-12 col-md-10 offset-md-1 col-lg-8 offset-lg-2">
+        DIBS-FORM RENDERS IN THIS CONTAINER
+      </div>
+    </div>
   </div> 
+   <!-- PAYMENT START PAGE  END -->
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-10 offset-md-1 col-lg-8 offset-lg-2">
+        <hr class="page-divider">
+      </div>
+    </div>
+  </div>
 
 
     <footer>
