@@ -92,7 +92,10 @@ hr.header-hr {
 
 /* MAIN */ 
 .main {
-  margin-bottom: 40px;
+  margin-bottom: 50px;
+}
+.main p.intro {
+  margin-bottom: 50px;
 }
 .payments-table {
 
@@ -100,8 +103,8 @@ hr.header-hr {
 .payments-table .payments-table-header {
   font-size: 24px;
 }
-.payments-table .payments-table-content-row {
-
+.payments-table .payments-table-content-row hr {
+  margin-bottom: 20px;
 }
 .payments-table .payments-table-content-row .payments-table-content-row-label {
   font-weight: 700;
@@ -117,7 +120,7 @@ hr.header-hr {
 
 #dibs-complete-checkout {
   border: 1px dotted #ccc;
-  margin-bottom: 20px;
+  margin-bottom: 70px;
 }
 
 @media (max-width: 575.98px) { 
@@ -154,6 +157,7 @@ h1 {
 
 h2 {
   font-family: 'NimbusSanNovCon-Med', 'Arial Narrow', Helvetica, Arial, 'Lucida Grande', sans-serif;
+  font-size: 24px;
 }
 /* END FONT */
 
