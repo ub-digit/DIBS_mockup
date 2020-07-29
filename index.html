@@ -14,6 +14,16 @@
 </head>
 
 <body>
+
+  <div class="debug">
+    <strong>Breakpoint: </strong>
+    <div class="xs">xs-small ( < 576px)</div>
+    <div class="small">small (>= 576px)</div>
+    <div class="medium">medium (>= 768px)</div>
+    <div class="large">large (>= 992px)</div>
+    <div class="x-large">x-large (>= 1200px)</div>
+  </div>
+
   <div class="container">
     <header class="row">  
       <div class="col-12">
@@ -25,13 +35,75 @@
       </div>
     </header>
   </div> <!-- end container -->
-  <hr>
 
-  <div class="container">
-    <h1>Betala dina avgifter</h1>
-    <div id="dibs-complete-checkout"></div> 
+  <hr class="header-hr">
+
+  <div class="container main">
+    <div class="row">
+      <div class="col-md-10 offset-md-1 col-lg-8 offset-lg-2">      
+        <h1>Betala dina avgifter</h1>
+        <p class="intro">
+          Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from.      
+        </p>
+
+        <div class="payments-table">
+          <div class="payments-table-header">
+            <h2 >
+              Att betala
+            </h2>
+          </div>
+          <div class="payments-table-content">
+            <!-- loop (2 dummy-rows for clarity) -->
+            <div class="row payments-table-content-row"> 
+              <div class="col-8">
+                <div class="payments-table-content-row-label">Förseningsavgift</div>
+              </div>
+              <div class="col-4">
+                <span class="float-right">255 kr</span>
+              </div> 
+              <div class="col-12 payments-table-content-row-item">Forskningsmetodikens grunder</div>
+              <div class=col-12>
+                  <hr>
+              </div>
+            </div>
+
+            <div class="row payments-table-content-row"> 
+              <div class="col-8">
+                <div class="payments-table-content-row-label">Ersättningsavgift</div>
+              </div>
+              <div class="col-4">
+                <span class="float-right">255 kr</span>
+              </div> 
+              <div class="col-12 payments-table-content-row-item">Grönsaker: tillbehör och granityr / </div>
+              <div class=col-12>
+                <hr>
+            </div>
+            </div>
+            <!-- end loop -->
+
+            <div class="row payments-table-content-row">
+              <div class="col-12">
+                <div class="payments-table-content-row-sum float-right">
+                  <div class="payments-table-content-row-sum-amount">
+                    Summa: 510 kr
+                  </div>
+                  <div class="payments-table-content-row-sum-taxes">
+                    Inkl. moms
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
   
+  <div class="container no-margin-on-xs" id="dibs-complete-checkout">
+    DIBS FORM RENDERS IN THIS CONTAINER
+  </div> 
+
+
     <footer>
       <div class="container">
         <div class="row">
