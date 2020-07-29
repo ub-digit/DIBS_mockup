@@ -1,4 +1,6 @@
-Remove debug-div when not needed
+# TODO
 
-To get english version of LOGO add class="en" to body-tag. 
+- Remove debug-div when not needed
+- To get english version of LOGO add class="en" to body-tag
+
 
