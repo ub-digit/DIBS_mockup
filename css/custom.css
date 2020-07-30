@@ -38,6 +38,7 @@ a {
 
 .btn.btn-primary {
   background-color: #025DA6;
+  border-color: #ccc;
 }
 .center {
   text-align: center;
@@ -123,6 +124,14 @@ hr.header-hr {
 }
 .error-icon .fas {
   color: #D9534F;
+  font-size: 100px;
+}
+.warning-icon {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.warning-icon .fas {
+  color: #f0ad4e;
   font-size: 100px;
 }
 .success-icon {
