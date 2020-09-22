@@ -1,0 +1,329 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-K6L7DH5');</script>
+  <!-- End Google Tag Manager -->
+  <meta charset="utf-8">
+  <title>Gothenburg University Library - Pay your fines</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Place favicon.ico in the root directory -->
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <link href="fontawesome/css/all.css" rel="stylesheet"> <!--load all styles -->
+  <link type="text/css" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700" media="all">
+  <link rel="stylesheet" href="css/custom.css">
+</head>
+
+<body class="en">
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K6L7DH5"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+
+  <div class="debug"> <!-- REMOVE WHEN NOT NEEDED -->
+    <strong>Breakpoint: </strong>
+    <div class="xs">xs-small ( < 576px)</div>
+    <div class="small">small (>= 576px)</div>
+    <div class="medium">medium (>= 768px)</div>
+    <div class="large">large (>= 992px)</div>
+    <div class="x-large">x-large (>= 1200px)</div>
+  </div>
+
+  <div class="container">
+    <header class="row">
+      <div class="col-12">
+        <div class="logo"></div>  <!-- APPLY class="en" ON BODY FOR ENGLISH LOGO -->
+        <div class="headers">
+          <div class="level-1">Gothenburg University Library</div>
+          <div class="level-2">Pay your fines</div>
+        </div>
+      </div>
+    </header>
+  </div>
+
+  <hr class="header-hr">
+
+  <div class="container main">
+    <div class="row">
+      <div class="col-md-10 offset-md-1 col-lg-8 offset-lg-2">
+
+        <!-- ERROR PAGE PAYMENT DONE -->
+        <div class="row">
+          <div class="col-12 col-sm-3 order-sm-last">
+            <div class="warning-icon">
+              <i class="fas fa-exclamation-triangle"></i>
+            </div>
+          </div>
+          <div class="col-12 col-sm-9 col-sm">
+            <h1>
+              Your payment is completed but something went wrong
+            </h1>
+            <p>
+              Your payment is completed but the system could not remove your fines. Contact the library and state the payment-ID, to receive help.
+            </p>
+            <p>
+              Your payment-ID:<br>
+              321313213544646532131csd646610
+            </p>
+            <p>
+              <a href="https://www.ub.gu.se/en/contact-us">Contact the library</a>
+            </p>
+          </div>
+        </div>
+
+        <div class="payments-table">
+          <div class="payments-table-header">
+              Payed
+          </div>
+          <div class="payments-table-content">
+            <!-- loop (2 dummy-rows for clarity) -->
+            <div class="row payments-table-content-row">
+              <div class="col-8">
+                <div class="payments-table-content-row-label">Forsenings fine</div>
+              </div>
+              <div class="col-4">
+                <span class="float-right">SEK 255</span>
+              </div>
+              <div class="col-12 payments-table-content-row-item">Forskningsmetodikens grunder</div>
+              <div class=col-12>
+                  <hr>
+              </div>
+            </div>
+
+            <div class="row payments-table-content-row">
+              <div class="col-8">
+                <div class="payments-table-content-row-label">Ersattnings fine</div>
+              </div>
+              <div class="col-4">
+                <span class="float-right">SEK 255</span>
+              </div>
+              <div class="col-12 payments-table-content-row-item">Grönsaker: tillbehör och granityr / </div>
+              <div class=col-12>
+                <hr>
+            </div>
+            </div>
+            <!-- end loop -->
+
+            <div class="row payments-table-content-row">
+              <div class="col-12">
+                <div class="payments-table-content-row-sum float-right">
+                  <div class="payments-table-content-row-sum-amount">
+                    Amount: SEK 510
+                  </div>
+                  <div class="payments-table-content-row-sum-taxes">
+                    including VAT
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row payment-made-info">
+          <div class="col-12 center">
+            <a href="https://minalan.ub.gu.se/" class="btn btn-primary">Back to My loans</a>
+          </div>
+        </div>
+
+        <!-- ERROR PAGE PAYMENT DONE END-->
+
+        <hr class="page-divider">
+
+        <!-- ERROR PAGE -->
+        <div class="row">
+          <div class="col-12 col-sm-3 order-sm-last">
+            <div class="error-icon">
+              <i class="fas fa-times-circle"></i>
+            </div>
+          </div>
+          <div class="col-12 col-sm-9 col-sm">
+            <h1>
+              Something went wrong
+            </h1>
+            <p>
+              Something went wrong while your fines were processed. No money has been withdrawn from your account. Go back and try again later.
+            </p>
+            <p>
+              <a href="javascript:history.back();">Back</a>
+            </p>
+          </div>
+        </div>
+        <!-- ERROR PAGE END-->
+
+        <hr class="page-divider">
+
+        <!-- PAYMENT SUCCESS -->
+        <div class="row">
+          <div class="col-12 col-sm-9 align-self-center">
+            <h1>Your payment is completed</h1>
+          </div>
+          <div class="col-12 col-sm-3 align-self-center">
+            <div class="success-icon">
+              <i class="fas fa-check-circle"></i>
+            </div>
+          </div>
+        </div>
+        <div class="payments-table">
+          <div class="payments-table-header">
+              Payed
+          </div>
+          <div class="payments-table-content">
+            <!-- loop (2 dummy-rows for clarity) -->
+            <div class="row payments-table-content-row">
+              <div class="col-8">
+                <div class="payments-table-content-row-label">Forsenings fine</div>
+              </div>
+              <div class="col-4">
+                <span class="float-right">SEK 255</span>
+              </div>
+              <div class="col-12 payments-table-content-row-item">Forskningsmetodikens grunder</div>
+              <div class=col-12>
+                  <hr>
+              </div>
+            </div>
+
+            <div class="row payments-table-content-row">
+              <div class="col-8">
+                <div class="payments-table-content-row-label">Ersattnings fine</div>
+              </div>
+              <div class="col-4">
+                <span class="float-right">SEK 255</span>
+              </div>
+              <div class="col-12 payments-table-content-row-item">Grönsaker: tillbehör och granityr / </div>
+              <div class=col-12>
+                <hr>
+            </div>
+            </div>
+            <!-- end loop -->
+
+            <div class="row payments-table-content-row">
+              <div class="col-12">
+                <div class="payments-table-content-row-sum float-right">
+                  <div class="payments-table-content-row-sum-amount">
+                    Amount: SEK 510
+                  </div>
+                  <div class="payments-table-content-row-sum-taxes">
+                    including VAT
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="row payment-made-info">
+              <div class="col-md-10 offset-md-1">
+                <p>
+                  The fines are paid and removed from your library account. We have sent a receipt of the payment to your e-mail.
+                </p>
+              </div>
+              <div class="col-12 center">
+                <a href="https://minalan.ub.gu.se/" class="btn btn-primary">Back to My loans</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- END PAYMENT SUCCESS -->
+
+
+        <hr class="page-divider">
+
+        <!-- PAYMENT START PAGE -->
+        <h1>Pay your fines</h1>
+        <p class="intro">
+          Pay your fines here with your cash/credit card or Swish. The fines are removed from your library account immediately after payment. We will send a receipt of your payment to the email you provide.
+        </p>
+
+        <div class="payments-table">
+          <div class="payments-table-header">
+              To be payed
+          </div>
+          <div class="payments-table-content">
+            <!-- loop (2 dummy-rows for clarity) -->
+            <div class="row payments-table-content-row">
+              <div class="col-8">
+                <div class="payments-table-content-row-label">Forsenings fine</div>
+              </div>
+              <div class="col-4">
+                <span class="float-right">SEK 255</span>
+              </div>
+              <div class="col-12 payments-table-content-row-item">Forskningsmetodikens grunder</div>
+              <div class=col-12>
+                  <hr>
+              </div>
+            </div>
+
+            <div class="row payments-table-content-row">
+              <div class="col-8">
+                <div class="payments-table-content-row-label">Ersattnings fine</div>
+              </div>
+              <div class="col-4">
+                <span class="float-right">SEK 255</span>
+              </div>
+              <div class="col-12 payments-table-content-row-item">Grönsaker: tillbehör och granityr / </div>
+              <div class=col-12>
+                <hr>
+            </div>
+            </div>
+            <!-- end loop -->
+
+            <div class="row payments-table-content-row">
+              <div class="col-12">
+                <div class="payments-table-content-row-sum float-right">
+                  <div class="payments-table-content-row-sum-amount">
+                    Amount: SEK 510
+                  </div>
+                  <div class="payments-table-content-row-sum-taxes">
+                    including VAT
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container" id="dibs-complete-checkout"> <!--apply class 'no-margin-on-xs' to remove 15px padding on left/right on container -->
+    <div class="row">
+      <div class="col-12 col-md-10 offset-md-1 col-lg-8 offset-lg-2">
+        DIBS-FORM RENDERS IN THIS CONTAINER
+      </div>
+    </div>
+  </div>
+   <!-- PAYMENT START PAGE  END -->
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-10 offset-md-1 col-lg-8 offset-lg-2">
+        <hr class="page-divider">
+      </div>
+    </div>
+  </div>
+
+
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <span class="footer-header">Gothenburg University Library</span><br>
+            Box 222, SE 405 30 Gothenburg<br>
+            Phone: 031-786 00 00
+            <br>
+            <br>
+            Company registration number: 202100-3153
+        </div>
+      </div>
+    </footer>
+</body>
+</html>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.js"></script>
+<script src="js/main.js"></script>
