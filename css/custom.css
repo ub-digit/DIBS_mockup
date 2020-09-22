@@ -4,7 +4,7 @@
 	src: url('http://webresources.gu.se/webfonts/2C1499_0_0.eot?#iefix') format('embedded-opentype'),
 	url('https://webresources.gu.se/webfonts/2C1499_0_0.woff') format('woff'),
 	url('https://webresources.gu.se/webfonts/2C1499_0_0.ttf') format('truetype'),
-	url('https://webresources.gu.se/webfonts/2C1499_0_0.svg') format('svg');	
+	url('https://webresources.gu.se/webfonts/2C1499_0_0.svg') format('svg');
 }
 
 @font-face {
@@ -13,7 +13,7 @@
 	src: url('https://webresources.gu.se/webfonts/2C1499_1_0.eot?#iefix') format('embedded-opentype'),
 	url('https://webresources.gu.se/webfonts/2C1499_1_0.woff') format('woff'),
 	url('https://webresources.gu.se/webfonts/2C1499_1_0.ttf') format('truetype'),
-	url('https://webresources.gu.se/webfonts/2C1499_1_0.svg#wf') format('svg');	
+	url('https://webresources.gu.se/webfonts/2C1499_1_0.svg#wf') format('svg');
 }
 
 @font-face {
@@ -48,15 +48,15 @@ hr {
   color: #ccc;
 }
 
-hr.page-divider { /* TO VISUALIZE DIFFERENT PAGES */ 
+hr.page-divider { /* TO VISUALIZE DIFFERENT PAGES */
   color: darkcyan;
   height: 10px;
   background-color:darkcyan;
-  border: none;  
+  border: none;
 
 }
 
-/* HEADER */ 
+/* HEADER */
 hr.header-hr {
   margin-bottom: 50px;
 }
@@ -67,10 +67,10 @@ hr.header-hr {
   background-image: url('../img/gu_logo_sv_high.png');
   background-size: 100%;
 }
-.en .logo { /* apply class="en" to body to get english logo */ 
+.en .logo { /* apply class="en" to body to get english logo */
   background-image: url('../img/gu_logo_en_high.png');
 }
-@media (min-width: 768px) { 
+@media (min-width: 768px) {
   .logo {
     width: 127px;
     height: 129px;
@@ -91,7 +91,7 @@ hr.header-hr {
   }
 }
 
-.headers .level-1 a {
+.headers .level-1 {
   text-decoration: none;
   color: #000;
   font-family: NimbusSanNovCon-Bol,'Nimbus Sans Novus Cond Bold',Arial;
@@ -99,7 +99,7 @@ hr.header-hr {
   text-transform: uppercase;
 }
 @media (min-width: 768px) {
-  .headers .level-1 a {
+  .headers .level-1 {
     font-size: 28px;
     line-height: 29px;
   }
@@ -116,10 +116,10 @@ hr.header-hr {
     font-size: 20px;
   }
 }
-/* END HEADER */ 
+/* END HEADER */
 
 
-/* MAIN */ 
+/* MAIN */
 .main {
   margin-bottom: 50px;
 }
@@ -178,17 +178,17 @@ hr.header-hr {
   border: 1px dotted #ccc;
  }
 
-@media (max-width: 575.98px) { 
-  /* REMOVE PADDING ON MOBILE FOR DIBS FORM */ 
+@media (max-width: 575.98px) {
+  /* REMOVE PADDING ON MOBILE FOR DIBS FORM */
   #dibs-complete-checkout.container.no-margin-on-xs {
     padding-right: 0;
     padding-left: 0;
   }
 }
-/* END MAIN */ 
+/* END MAIN */
 
 
-/* FOOTER */ 
+/* FOOTER */
 footer {
  background-color: #1f1f1f;
  color: #f2f2f2;
@@ -202,10 +202,10 @@ footer {
 /* END FOOTER */
 
 
-/* FONT */ 
+/* FONT */
 h1 {
 	font-family: 'NimbusSanNovCon-SemBol', Arial Narrow, Helvetica, Arial, 'Lucida Grande', sans-serif;
-	font-size: 2em; 
+	font-size: 2em;
 	font-weight: normal;
   line-height: 1.1em;
   margin-bottom: 10px;
@@ -244,13 +244,13 @@ h1 {
   display: none;
   font-size: 10px;
 }
-@media (max-width: 575.98px) { 
+@media (max-width: 575.98px) {
   .debug .xs {
     display: inline-block;
   }
 }
-@media (min-width: 576px) and (max-width: 767.98px) { 
-  .debug .small { 
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .debug .small {
     display: inline-block;
   }
 
@@ -265,9 +265,9 @@ h1 {
     display: inline-block;
   }
 }
-@media (min-width: 1200px) { 
+@media (min-width: 1200px) {
   .debug .x-large {
     display: inline-block;
   }
 }
-/* END DEBUG */ 
+/* END DEBUG */
