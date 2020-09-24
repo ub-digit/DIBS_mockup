@@ -9,23 +9,25 @@ function createUID() {
 
 function generatePaymentData() {
   var lang = $( "#languageSelect").val();
-  var actionUrl = "https://betala.ub.gu.se/Koha/Payment?language=";
-  var actionUrl = actionUrl + lang;
+  var action_url = "https://betala.ub.gu.se/Koha/Payment?language=";
+  var action_url = action_url + lang;
   var UID = createUID();
   var env = $( "#environmentSelect" ).val();
+  var return_url = environments[env].return_url + "?language=" + (lang === "sv-SE" ? "sv-SE" : "en");
+  var callback_url = environments[env].callback_url
   var paymentsArray  = JSON.parse($( "#paymentsArray" ).val());
 
   var paymentData = {
     uid: UID,
     language: lang,
-    return_url: environments[env].return_url,
-    callback_url: environments[env].callback_url,
+    return_url: return_url,
+    callback_url: callback_url,
     payments: paymentsArray
   };
 
   $( "#paymentData" ).val(JSON.stringify(paymentData));
-  $( "#paymentDataForm" ).attr("action", actionUrl);
-  
+  $( "#paymentDataForm" ).attr("action", action_url);
+
 }
 
 
