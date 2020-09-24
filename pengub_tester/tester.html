@@ -1,0 +1,69 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Pengub tester</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
+</head>
+<body>
+  <main role="main" class="container">
+    <div class="container">
+      <h1>Pengub tester</h1>
+      <form>
+        <div class="form-group">
+        <label for="languageSelect">Språk</label>
+         <select id="languageSelect" name="languageSelect" class="form-control">
+           <option value="sv-SE" selected>Svenska</option>
+           <option value="en-US">Engelska</option>
+         </select>
+       </div>
+       <div class="form-group">
+        <label for="environmentSelect">Miljö</label>
+        <select id="environmentSelect" name="environmentSelect" class="form-control">
+          <option value=0 selected>Lab</option>
+          <option value=1 >Production</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="paymentsArray">Array med avgifter</label>
+        <textarea class="form-control" id="paymentsArray" name="paymentsArray" style="min-height:200px;"></textarea>
+      </div>
+      <div class="form-group">
+        <button type="button" class="btn btn-secondary" onclick="generatePaymentData();">Generera betalningsobjekt</button>
+      </div>
+     </form>
+
+    <form id="paymentDataForm" method="post" target="_blank">
+      <div class="form-group">
+        <textarea class="form-control" id="paymentData" name="payment_data" readonly style="min-height:150px"></textarea>
+      </div>
+      <div class="form-group">
+        <input type="submit" class="btn btn-primary" value="Starta betalning">
+      </div>
+    </form>
+
+    <h2>Betalningsobjektsmall</h2>
+    <pre><code>
+      {
+        uid: "##REPLACE##",
+        language: "sv-SE",
+        return_url: "https://koha-lab.ub.gu.se",
+        callback_url: "https://koha-lab.ub.gu.se/cgi-bin/koha/svc/onlinepayment",
+        payments: [
+          {
+          account_id: ##REPLACE##,
+          amount: 200.00,
+          library_group: "Gpek",
+          text: "",
+          title: "Forskningsmetodikens grunder",
+          debit_type: "media",
+          debit_title: "Förseningsavgift"
+          }
+        ]
+      }
+</code></pre>
+  </main>
+</div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="scripts.js"></script>
+</body>
+</html>
